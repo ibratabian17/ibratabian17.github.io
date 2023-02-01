@@ -1,0 +1,25 @@
+form {
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+body {
+    background: #212121;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
