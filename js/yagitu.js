@@ -9,7 +9,7 @@ document.querySelector("#Pertanyaan").addEventListener("submit", function(event)
       window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     } else {
       alert("Makasih, Sebagai Hadiah Terima Kasih, Klik OK akan kuberi hadiah");
-      window.location.replace("https://pastebin.com/raw/CRDK4fER");
+      window.location.replace("https://youtu.be/J_a02moYkO0");
       
     }
   });
