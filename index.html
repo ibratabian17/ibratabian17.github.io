@@ -1,238 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Ibra Al Tabian</title>
-  <meta content="Ini Portofolionya Ibra" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-localize="title">Ibra Al Tabian - About me</title>
+    <link rel="icon" type="image/png" href="assets/logo.webp">
+    <!-- Material Icons (Round style) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- Font Awesome CDN for brand icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="index-page">
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo"></div>
+        <div class="loader-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
 
-  <header id="header" class="header d-flex flex-column justify-content-center">
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+        <div class="floating-shape shape-6"></div>
+        <div class="floating-shape shape-7"></div> 
+        <div class="floating-shape shape-8"></div>
+    </div>
 
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-      </ul>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo-link" onclick="triggerHapticFeedback()">
+                <div class="logo"></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active-link" data-localize="home">Beranda</a></li>
+                <li><a href="#about" data-localize="about">Tentang Saya</a></li>
+                <li><a href="#skills" data-localize="skills">Keahlian</a></li>
+                <li><a href="#projects" data-localize="portfolio">Proyek</a></li>
+                <li><a href="#contact" data-localize="contact">Kontak</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links-mobile">
+                <i class="material-icons-round">menu</i>
+            </button>
+            <div class="language-dropdown">
+                <button class="dropdown-toggle" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons-round">language</i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="setLanguage('en'); triggerHapticFeedback(); return false;">EN</a></li>
+                    <li><a href="#" onclick="setLanguage('id'); triggerHapticFeedback(); return false;">ID</a></li>
+                    <li><a href="#" onclick="setLanguage('ar'); triggerHapticFeedback(); return false;">AR</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h3>Ahlan wa Sahlan! Aku</h3>
-            <h2>Ibra Al Tabian</h2>
-            <p>I'm <span class="typed"
-                data-typed-items="Developer, Photographer, Modder, a Human">Developer</span><span
-                class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="https://www.facebook.com/profile.php?id=100010159903273"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/ibra17al.t"><i class="bi bi-instagram"></i></a>
-              <a href="https://id.linkedin.com/in/ibra-al-tabian-008121311"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
+    <!-- Hero Section (Content same, classes updated if needed) -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Ibra Al Tabian</h1>
+            <h2 class="hero-subtitle" data-localize="hero-title">Student yang kepengen jadi Full Stack Developer</h2>
+            <p class="hero-description" data-localize="hero-description">
+                Hai! Selamat datang di portofolio ane. Di sini ada banyak proyek seru yang saya bikin, dari ngoding sampai desain. Yuk, intip-intip!
+            </p>
+            <a href="#about" class="cta-button">
+                <i class="material-icons-round cta-greeting-icon">waving_hand</i> <span data-localize="greeting">Yuk, Kenalan Lebih Dekat!</span>
+            </a>
         </div>
-      </div>
-
     </section>
-
 
     <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Saya suka belajar dan berkarya untuk menciptakan sesuatu yang
-          baru dan bermanfaat.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Foto Profil Ibra Al Tabian">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
-            <p class="fst-italic py-3">
-              Saya suka mengeksplorasi teknologi baru dan membuat proyek kreatif, baik untuk pengembangan diri maupun
-              kolaborasi dengan orang lain.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>Not Telling</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>Prjktla.online</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>DM di email</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Surakarta</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>Not Telling</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>1 Int</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ibratabian@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="photo-container" onclick="triggerHapticFeedback([50,30,50])">
+                <img src="assets/about-me/ibra-1.png" alt="Foto Ibra Al Tabian" class="photo" id="profilePhoto1">
             </div>
-            <p class="py-3">
-              Saya selalu terbuka untuk bekerja sama di berbagai proyek, baik itu pengembangan aplikasi, fotografi
-              kreatif, maupun modifikasi digital. Mari kita buat sesuatu yang hebat bersama!
+            <div class="about-text">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;" data-localize="about-title">Tentang Saya</h2>
+                <p data-localize="about-description-part1">
+                    Hai! Kenalin nih, aku <span class="highlight">Ibra Al Tabian</span>,
+                    untuk sekarang, aku masih kelas 1 SMA. aku asalnya dari Surakarta, Indonesia.
+                    Aku suka banget sama <span class="highlight">full stack development</span>
+                    dan seneng banget bikin aplikasi atau tools yang berguna.
+                </p>
+                <p data-localize="about-description-part2">
+                    Selain ngoding, aku juga hobi <span class="highlight">fotografi</span>
+                    sama <span class="highlight">desain grafis</span> kalau lagi bosen.
+                    Pas senggang, aku suka sepedaan keliling kota Surakarta ama Jogja (kalau kita manggilnya Joglo wakakaka)
+                    yang cakep ini.
+                </p>
+                <p data-localize="about-description-part3">
+                    Walaupun masih muda, aku udah punya beberapa proyek yang lagi jalan
+                    dan juga ikut kontribusi di dunia open source, terutama di pengembangan
+                    custom ROM Android. (Sekarang jarang sih :/)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (Content same, classes updated if needed) -->
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <h2 class="section-title" data-localize="skills-title">Keahlian Saya</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3 class="skill-category" data-localize="development-category"><i class="material-icons-round">laptop_chromebook</i> Development</h3>
+                    <ul class="skill-list">
+                        <li data-localize="fullstack-dev">Full Stack Development</li>
+                        <li data-localize="js-nodejs">JavaScript & Node.js</li>
+                        <li data-localize="python-cpp-etc">Python, C++, Dkk</li>
+                        <li data-localize="android-dev">Android Development (Java/Kotlin)</li>
+                        <li data-localize="custom-rom-dev">Pengembangan Custom ROM (AOSP) (Gagal Cuy 😅)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-category" data-localize="creative-category"><i class="material-icons-round">palette</i> Creative</h3>
+                    <ul class="skill-list">
+                        <li data-localize="photography-videography">Fotografi & Videografi</li>
+                        <li data-localize="graphic-design">Desain Grafis (Alight Motion, Figma, Paint.NET)</li>
+                        <li data-localize="ui-ux-design">UI/UX Design (Figma)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-category" data-localize="tools-platform-category"><i class="material-icons-round">build</i> Tools & Platform</h3>
+                    <ul class="skill-list">
+                        <li data-localize="git-github-gitlab">Git & GitHub / GitLab</li>
+                        <li data-localize="linux-shell">Linux (Ubuntu, Arch) & Shell Scripting</li>
+                        <li data-localize="docker-virtualization">Docker & Virtualization</li>
+                        <li data-localize="workers-express">Workers & Express.js</li>
+                        <li data-localize="vscode-android-studio">VS Code, Android Studio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (Content same, classes updated if needed) -->
+    <section id="projects" class="projects">
+        <div class="projects-container">
+            <h2 class="section-title" data-localize="portfolio-title">Proyek Saya</h2>
+            <div class="project-tabs">
+                <button class="tab-button active"
+                    onclick="showProjects('active', event); triggerHapticFeedback();" data-localize="active-projects-tab">Proyek Aktif</button>
+                <button class="tab-button" onclick="showProjects('inactive', event); triggerHapticFeedback();" data-localize="inactive-projects-tab">Proyek
+                    Terdahulu</button>
+            </div>
+            <div id="active-projects" class="projects-grid">
+                <div class="project-card">
+                    <div class="status-badge" data-localize="status-active">Aktif</div>
+                    <div class="project-header">
+                        <h3 class="project-title">YouLyPlus</h3>
+                        <p class="project-subtitle" data-localize="youlyplus-subtitle">Enhanced YouTube Music Experience</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description" data-localize="youlyplus-description">
+                            Aplikasi yang meningkatkan pengalaman YouTube Music dengan
+                            fitur lirik yang ditingkatkan (Word-by-Word). Memberikan
+                            pengalaman mendengarkan musik yang lebih immersive.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/ibratabian17/YouLyPlus" class="project-link" target="_blank"
+                                onclick="triggerHapticFeedback()">
+                                <i class="material-icons-round">smartphone</i> <span data-localize="github-link">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="status-badge" data-localize="status-active">Aktif</div>
+                    <div class="project-header">
+                        <h3 class="project-title">OpenParty</h3>
+                        <p class="project-subtitle" data-localize="openparty-subtitle">Just Dance Unlimited Server</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description" data-localize="openparty-description">
+                            Replikasi server Just Dance Unlimited yang memungkinkan
+                            pemain untuk menikmati konten Just Dance secara gratis.
+                            Proyek open source untuk komunitas gaming.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/ibratabian17/OpenParty" class="project-link" target="_blank"
+                                onclick="triggerHapticFeedback()">
+                                <i class="material-icons-round">sports_esports</i> <span data-localize="github-link">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="inactive-projects" class="projects-grid" style="display: none;">
+                <div class="project-card">
+                    <div class="status-badge status-inactive" data-localize="status-inactive">Tidak Aktif</div>
+                    <div class="project-header">
+                        <h3 class="project-title">POCO F1 Android 13</h3>
+                        <p class="project-subtitle" data-localize="poco-rom-subtitle">Custom ROM Development</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description" data-localize="poco-rom-description">
+                            Device tree untuk Android 13 pada POCO F1 (beryllium).
+                            Kontribusi dalam pengembangan custom ROM untuk memberikan
+                            pengalaman Android terbaru pada device lama.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/ibratabian17/device_xiaomi_beryllium" class="project-link"
+                                target="_blank" onclick="triggerHapticFeedback()">
+                                <i class="material-icons-round">smart_toy</i> <span data-localize="github-link">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="status-badge status-inactive" data-localize="status-inactive">Tidak Aktif</div>
+                    <div class="project-header">
+                        <h3 class="project-title">Lenovo K5+ Android 11</h3>
+                        <p class="project-subtitle" data-localize="lenovo-rom-subtitle">Custom ROM Development</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description" data-localize="lenovo-rom-description">
+                            Device tree untuk Android 11 pada Lenovo Vibe K5+ (A6020).
+                            Menghadirkan pengalaman Android modern untuk device entry-level
+                            dengan optimasi performa yang baik.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/ibratabian17/device_lenovo_A6020" class="project-link"
+                                target="_blank" onclick="triggerHapticFeedback()">
+                                <i class="material-icons-round">smart_toy</i> <span data-localize="github-link">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Content same, classes updated if needed) -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title" data-localize="contact-title">Mari Terhubung!</h2>
+            <p class="contact-text" data-localize="contact-description">
+                Tertarik buat kolaborasi, nanya-nanya, atau sekadar ngobrol santai soal teknologi dan kreativitas?
+                Jangan sungkan buat hubungin aku lewat platform di bawah ini ya!
             </p>
-          </div>
+            <div class="social-links">
+                <a href="mailto:ibratabian@gmail.com" class="social-link" onclick="triggerHapticFeedback()">
+                    <i class="material-icons-round">email</i> <span data-localize="email-link">Email</span>
+                </a>
+                <a href="https://instagram.com/ibra17al.t" class="social-link" target="_blank"
+                    onclick="triggerHapticFeedback()">
+                    <i class="fab fa-instagram"></i> <span data-localize="instagram-link">Instagram</span>
+                </a>
+                <a href="https://id.linkedin.com/in/ibra-al-tabian-008121311" class="social-link" target="_blank"
+                    onclick="triggerHapticFeedback()">
+                    <i class="fab fa-linkedin-in"></i> <span data-localize="linkedin-link">LinkedIn</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100010159903273" class="social-link" target="_blank"
+                    onclick="triggerHapticFeedback()">
+                    <i class="fab fa-facebook-f"></i> <span data-localize="facebook-link">Facebook</span>
+                </a>
+                <a href="https://github.com/ibratabian17" class="social-link" target="_blank"
+                    onclick="triggerHapticFeedback()">
+                    <i class="fab fa-github"></i> <span data-localize="github-link">GitHub</span>
+                </a>
+            </div>
         </div>
-
-      </div>
-
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Beberapa proyek yang pernah saya kerjakan, mulai dari pengembangan web hingga modifikasi perangkat lunak dan
-          pengembangan tools untuk komunitas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-web">Web Apps</li>
-            <li data-filter=".filter-rom">Custom ROM</li>
-            <li data-filter=".filter-tools">Modding Tools</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <!-- Portfolio Item: WebPOS -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/portfolio/WebPOS.png" class="img-fluid" alt="WebPOS">
-              <div class="portfolio-info">
-                <h4>WebPOS</h4>
-                <p>Sebuah aplikasi web untuk Point of Sale (POS) yang memudahkan manajemen transaksi toko.</p>
-                <a href="assets/img/portfolio/WebPOS.png" title="WebPOS" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- Portfolio Item: KaraokePoe -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <img src="assets/img/portfolio/KaraokePoe.png" class="img-fluid" alt="KaraokePoe">
-              <div class="portfolio-info">
-                <h4>KaraokePoe</h4>
-                <p>Aplikasi web untuk karaoke online dengan integrasi pencarian lagu dan fitur favorit pengguna.</p>
-                <a href="assets/img/portfolio/KaraokePoe.png" title="KaraokePoe" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- Portfolio Item: Android 11 Port -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-rom">
-              <img src="assets/img/portfolio/Android11.png" class="img-fluid" alt="Android 11 Port">
-              <div class="portfolio-info">
-                <h4>Android 11 Port</h4>
-                <p>Berhasil memporting Android 11 ke Lenovo A6020, memperpanjang umur perangkat lama.</p>
-                <a href="assets/img/portfolio/Android11.png" title="Android 11 Port" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- Portfolio Item: UbiArt Archive Tools -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tools">
-              <img src="https://repository-images.githubusercontent.com/702063881/b3aa1073-a25b-4ffa-93ea-4209355d4ba4" class="img-fluid" alt="UbiArt Archive Tools">
-              <div class="portfolio-info">
-                <h4>UbiArt Archive Tools</h4>
-                <p>Membuat tools untuk modder game seperti UbiArt Archive Tools, mempermudah ekstraksi dan modifikasi
-                  game.</p>
-                <a href="https://repository-images.githubusercontent.com/702063881/b3aa1073-a25b-4ffa-93ea-4209355d4ba4" title="UbiArt Archive Tools"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo"></div>
+        <div class="footer-social-links">
+            <a href="https://instagram.com/ibra17al.t" class="footer-social-link" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://id.linkedin.com/in/ibra-al-tabian-008121311" class="footer-social-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/ibratabian17" class="footer-social-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:ibratabian@gmail.com" class="footer-social-link" aria-label="Email"><i class="material-icons-round">email</i></a>
         </div>
+        <p data-localize="copyright">© <span id="currentYear"></span> Ibra Al Tabian. Dibuat menggunakan aturan desain dari Google Material 3
+            Expressive yang dimodifikasi.</p>
+    </footer>
 
-      </div>
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn"  onclick="scrollToTop(); triggerHapticFeedback();">
+        <i class="material-icons-round">arrow_upward</i>
+    </button>
 
-    </section>
-
-    <!-- /Portfolio Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    <script src="index.localisation.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
