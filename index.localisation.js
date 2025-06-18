@@ -161,7 +161,7 @@ const translations = {
         "copyright": "© {year} إبرا التبيان. تم البناء باستخدام قواعد تصميم Google Material 3 Expressive المعدلة.",
         "back-to-top": "العودة للأعلى"
     },
-    gnt: {
+    gofef: {
         // Nte Goma
         title: "Ibra Al Tabian - Portofolio 🔥",
         home: "Home",
@@ -267,17 +267,17 @@ function applyTranslations() {
     }
 }
 
-// Easter egg for Gnt language
-let gntEasterEggCount = 0;
-const gntEasterEggThreshold = 5; // Click 5 times to enable Gnt
+// Easter egg for Gofef language
+let gofefEasterEggCount = 0;
+const gofefEasterEggThreshold = 5; // Click 5 times to enable Gofef
 
-function activateGntEasterEgg() {
-    gntEasterEggCount++;
-    console.log(`Logo clicked! Gnt easter egg count: ${gntEasterEggCount}`);
-    if (gntEasterEggCount >= gntEasterEggThreshold) {
-        setLanguage('gnt');
-        console.log("Gnt language activated! Enjoy the chill vibes.");
-        gntEasterEggCount = 0; // Reset count after activation
+function activateGofefEasterEgg() {
+    gofefEasterEggCount++;
+    console.log(`Logo clicked! Gofef easter egg count: ${gofefEasterEggCount}`);
+    if (gofefEasterEggCount >= gofefEasterEggThreshold) {
+        setLanguage('gofef');
+        console.log("Gofef language activated! Enjoy the chill vibes.");
+        gofefEasterEggCount = 0; // Reset count after activation
     }
 }
 
@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const logoElement = document.querySelector('.logo'); // Assuming there's a logo with class 'logo'
     if (logoElement) {
         console.log("Logo element found, attaching easter egg listener.");
-        logoElement.addEventListener('click', activateGntEasterEgg);
+        logoElement.addEventListener('click', activateGofefEasterEgg);
     } else {
         console.log("Logo element not found. Easter egg will not work.");
     }
@@ -297,4 +297,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Expose functions globally if needed for external calls (e.g., language switcher buttons)
 window.setLanguage = setLanguage;
-window.activateGntEasterEgg = activateGntEasterEgg;
+window.activateGofefEasterEgg = activateGofefEasterEgg;
